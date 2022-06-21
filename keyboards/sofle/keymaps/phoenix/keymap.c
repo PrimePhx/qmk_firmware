@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,          KC_Q,         KC_W,         KC_F,         KC_P,     KC_B,                      KC_J,           KC_L,         KC_U,         KC_Y,         KC_SCLN,  KC_BSPC,
   KC_CAPS,  LGUI_T(KC_A), LALT_T(KC_R), LCTL_T(KC_S), LSFT_T(KC_T),    KC_G,                      KC_M,    RSFT_T(KC_N), RCTL_T(KC_E), RALT_T(KC_I), RGUI_T(KC_O),    KC_QUOT,
   KC_LSPO,         KC_Z,         KC_X,         KC_C,         KC_D,     KC_V, KC_MPLY,     KC_F13, KC_K,           KC_H,         KC_COMM,      KC_DOT,       KC_SLSH,  KC_HYPR,
-                   KC_LGUI, KC_LALT, LT(_MEDIA, KC_ESC), LT(_NAV, KC_SPC), KC_TAB,        LT(_SYM, KC_ENT),LT(_NUM, KC_BSPC), KC_DEL, KC_RALT, KC_RGUI
+                   KC_LGUI, KC_LALT, LT(_MEDIA, KC_ESC), LT(_NAV, KC_SPC), KC_TAB,        LT(_SYM, KC_ENT),LT(_NUM, KC_BSPC), KC_DEL, KC_LEFT, KC_RGHT
 ),
 /* NAV
  * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -70,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------'
  */
 [_MEDIA] = LAYOUT(
-  KC_NO,  KC_NO,   KC_NO,     KC_NO,    KC_NO,    KC_NO,                         KC_NO,   KC_NO,    KC_NO,    KC_NO,    KC_NO,  RESET,
+  CG_TOGG,  KC_NO,   KC_NO,     KC_NO,    KC_NO,    KC_NO,                         KC_NO,   KC_NO,    KC_NO,    KC_NO,    KC_NO,  RESET,
   KC_NO,  KC_NO,   KC_NO,     KC_NO,    KC_NO,    KC_NO,                         KC_NO,   KC_NO,    KC_NO,    KC_NO,    KC_NO,  KC_NO,
   KC_NO,  KC_LGUI, KC_LALT,   KC_LCTL,  KC_LSFT,  KC_NO,                         KC_MPRV, KC_VOLD,  KC_VOLU,  KC_MNXT,  KC_NO,  KC_NO,
   KC_NO,  KC_NO,   KC_NO,     KC_NO,    KC_NO,    KC_NO,   _______,     _______, KC_NO,   KC_NO,    KC_NO,    KC_NO,    KC_NO,  _______,
